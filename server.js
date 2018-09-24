@@ -20,7 +20,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => { res.send(database.users) })
+app.get('/', (req, res) => { res.send('it is working') })
 app.post('/signin', signin.handleSignin(knex, bcrypt))
 app.post('/register', (req, res) => { register.handleRegister(req, res, knex, bcrypt) })
 app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, knex) })

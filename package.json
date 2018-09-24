@@ -1,13 +1,13 @@
 {
   "name": "facerecognitionbrainAPI",
   "version": "1.0.0",
-  "description": "",
+  "description": "face detection app",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "sean pheneger",
   "license": "ISC",
   "dependencies": {
     "bcrypt-node": "^0.1.0",
