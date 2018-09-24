@@ -5,7 +5,7 @@ const cors = require('cors');
 const knex = require('knex')({
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
+    host : 'postgresql-metric-22388',
     user : 'postgres',
     password : 'Oseanasee69!',
     database : 'smart-brain'
