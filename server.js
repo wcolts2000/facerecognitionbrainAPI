@@ -5,10 +5,8 @@ const cors = require('cors');
 const knex = require('knex')({
   client: 'pg',
   connection: {
-    host : 'postgresql-metric-22388',
-    user : 'postgres',
-    password : 'Oseanasee69!',
-    database : 'smart-brain'
+    host : process.env.DATABASE_URL,
+    ssl: true,
     }
 });
 const register = require('./controllers/register');
