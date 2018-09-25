@@ -2,6 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt-node');
 const cors = require('cors');
+const register = require('./controllers/register');
+const signin = require('./controllers/signin');
+const profile = require('./controllers/profile');
+const image = require('./controllers/image');
 const knex = require('knex')({
   client: 'pg',
   connection: {
@@ -9,10 +13,7 @@ const knex = require('knex')({
     ssl: true,
     }
 });
-const register = require('./controllers/register');
-const signin = require('./controllers/signin');
-const profile = require('./controllers/profile');
-const image = require('./controllers/image');
+
 const app = express();
 
 app.use(cors());
